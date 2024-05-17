@@ -1,2 +1,2 @@
 # HomePage
-Yu Sha's HomePage
+Yu Sha's Academic HomePage
