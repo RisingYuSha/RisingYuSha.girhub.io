@@ -156,3 +156,16 @@ a.anchor {
     top: -50px;
     visibility: hidden;
 }
+.like-button i {
+    color: rgb(0, 255, 255); /* 更改图标颜色，可以替换成你喜欢的颜色 */
+    font-size: 1.5em; /* 增大图标尺寸，2em是示例值，可以根据需要调整 */
+    transition: color 0.3s; /* 添加颜色变化过渡效果 */
+}
+
+.like-button:hover i {
+    color: rgb(255, 153, 0); /* 鼠标悬停时图标颜色 */
+}
+
+.like-count {
+    font-size: 1.3em; /* 增大计数字体尺寸，1.5em是示例值，可以根据需要调整 */
+}
