@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -45,7 +46,14 @@
   });
   </script>
   //-->
-
+  <!-- Google tag (gtag.js) --> 
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TKRX34MNS"></script> 
+  <script> 
+    window.dataLayer = window.dataLayer || []; 
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date()); 
+    gtag('config', 'G-4TKRX34MNS'); 
+    </script>
 </head>
 
 
@@ -55,8 +63,34 @@
 <nav class="w3-sidebar w3-bar-gray w3-gray w3-collapse w3-top w3-right" style="z-index:3;width:164px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <h3><b>🧑‍🎓Yu</b></h3>
+    <p class="w3-center">
+      <span id="likeButton" class="like-button"><i class="fas fa-thumbs-up"></i></span>
+      <span id="likeCount" class="like-count">0</span>
+    </p>
   </div>
-  
+  <!-- JavaScript for like button -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const likeButton = document.getElementById('likeButton');
+      const likeCountSpan = document.getElementById('likeCount');
+      
+      // 点击计数器（仅为演示用，刷新后计数将重置）
+      let likeCount = 0;
+
+      // 点赞按钮点击事件
+      likeButton.addEventListener('click', () => {
+        likeCount++;
+        likeCountSpan.textContent = likeCount;
+
+        // 触发 Google Analytics 事件
+        gtag('event', 'like_button_click', {
+          'event_category': 'engagement',
+          'event_label': 'Like Button',
+          'value': 1
+        });
+      });
+    });
+  </script>
 <!-- Sidebar/menu -->
 <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
   <a href="#home" class="w3-bar-item w3-button">🏡 Home</a>
@@ -97,10 +131,10 @@
       🇨🇳❄️| ♂️ | 9️⃣6️⃣ | 🐭 | 🅱️ | ♊ | 🐕 
     </p>
     <p class="w3-center">
-      💪 | 📸 | 🏓 
+      📸 | 🎱 | 🏓 | 🎾 | 🏀 | 🎷
     </p>
       <p class="w3-justify" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;max-width:750px">
-        I am Yu Sha (🦈沙毓🦈),  co-founder of LaiWen Technology & Chief Executive Officer of AI and now a PhD candidate at <a style="color: #447ec9" href="https://www.xidian.edu.cn/">Xidian University</a>, where I was co-advised by Prof. <a style="color: #447ec9" href="https://faculty.xidian.edu.cn/GSP2/zh_CN/index/335507/list/index.htm">Shuiping Gou</a></a>
+        I am Yu Sha (🦈沙毓🦈), now a PhD candidate at <a style="color: #447ec9" href="https://www.xidian.edu.cn/">Xidian University</a>, where I was co-advised by Prof. <a style="color: #447ec9" href="https://faculty.xidian.edu.cn/GSP2/zh_CN/index/335507/list/index.htm">Shuiping Gou</a></a>
         and Prof. <a style="color: #447ec9" href="https://web.xidian.edu.cn/liubo/index.html">Bo Liu</a></a>. My research interests includes AI in Industry (especially cavitation detection, cavitation intensity recognition and fault detection, etc.), 
         AI in Physics (especially traditional filters with deep learning), Signal Processing and Deep Learning (especially generative models and attention mechanisms). During 2020 to 2022, I am a PhD vising student in <a style="color: #447ec9" href = "https://www.fias.science/en/theoretical-sciences/research-groups/kai-zhou/">"Deepthinkers"</a> group at 
         <a style="color: #447ec9" href="https://fias.institute/en/">Frankfurt Institute for Advanced Studies (FIAS)</a>, where I was co-advised by Prof. <a style="color: #447ec9" href="https://www.fias.science/en/fellows/detail/stoecker-horst/">Horst Stöcker</a></a> 
@@ -119,10 +153,6 @@
 <!-- The News Section -->
 <div class="w3-container w3-padding-32" id="news">
   <h2>📰 News</h2>
-    <p><li> <em>16/05/2024</em>, 🎉🎉 one paper has been accepted by <a style="color: #447ec9" href="https://kdd2024.kdd.org/">ACM SIGKDD 2024</a>.</li></p>
-    <p><li> <em>16/08/2023</em>, 🎉🎉 one paper has been accepted by <a style="color: #447ec9" href="https://www.mi-research.net/">Machine Intelligence Research (MIR)</a>.</li></p>
-    <p><li> <em>31/07/2023</em>, 🎉🎉 one patent has been successfully summitted for hierarchical cavitation intensity recognition.</li></p>
-    <p><li> <em>28/07/2023</em>, 🎉🎉 one patent has been successfully submitted for an age estimation of human faces.</li></p>
     <p><li> <em>01/12/2022</em>, 🎉🎉 one paper has been accepted by <a style="color: #447ec9" href="https://www.sciencedirect.com/journal/artificial-intelligence-in-geosciences">Artificial Intelligence in Geosciences (AIG)</a>.</li></p>
     <p><li> <em>30/09/2022</em>, 📢📢 I came back to <a style="color: #447ec9" href="https://www.xidian.edu.cn/">Xidian University (XDU)</a> as a PhD visiting student.</li></p>
     <p><li> <em>01/08/2022</em>, 🎉🎉 one paper has been accepted by <a style="color: #447ec9" href="https://opg.optica.org/conference.cfm?meetingid=63&yr=2022">Digital Holography and Three-Dimensional Imaging 2022</a>.</li></p>
@@ -165,7 +195,7 @@
       </ul>
     </li>
 
-    <li><h5>Deep Learning</h5>
+    <li><h5>Deep Laerning</h5>
       <ul>
         <li>Generative models, eg: GAN [<a style="color: #447ec9" href="https://arxiv.org/abs/1406.2661">12</a>], Flow Models [<a style="color: #447ec9" href="https://arxiv.org/abs/1807.03039">13</a>] and Diffusion Models [<a style="color: #447ec9" href="https://arxiv.org/abs/2105.05233">14</a>, <a style="color: #447ec9" href="https://arxiv.org/abs/1503.03585">15</a>, <a style="color: #447ec9" href="https://arxiv.org/abs/2006.11239">16</a>], etc [<a style="color: #447ec9" href="https://arxiv.org/abs/2302.04265">17</a>, <a style="color: #447ec9" href="https://arxiv.org/abs/2209.11178">18</a>];</li>
         <li>Attention mechanisms, eg: Channel Attention [<a style="color: #447ec9" href="https://arxiv.org/abs/1709.01507">19</a>], Spatial Attention [<a style="color: #447ec9" href="https://arxiv.org/abs/1807.06521">20</a>] and Physical Attention [<a style="color: #447ec9" href="https://arxiv.org/abs/2012.11879">21</a>].</li>
@@ -197,20 +227,12 @@
     </p> -->
     <h4> Journal Papers:</h4>
       <ol>
-          <p>
-          <li><strong>Prioritization Hindsight Experience based on Spatial Position Attention for Robot</strong>
-          <br>
-           Ye Yuan, <strong>Yu Sha</strong>, Feixiang Sun, Haofan Lu, Shuiping Gou, Jie Luo
-          <br>
-          <em>Machine Intelligence Research</em> | (<strong>EI</strong>) | xxx (2023) xxxx | <a style="color: #447ec9" href="https://www.mi-research.net/">Paper</a> | <em>This is job I did when I was reaearching RL and first author is someone else (You will get it if you know)</em>
-        </p>
-        
         <p>
           <li><strong>An acoustic signal cavitation detection framework based on XGBoost with adaptive selection feature engineering</strong>
           <br>
           <strong>Yu Sha</strong>, Johannes Faber, Shuiping Gou, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou  
           <br>
-          <em>Measurement</em> | (<strong>SCI: 2-Top</strong>) | 192 (2022) 110897 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0263224122001798">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/XGBoost_ASFE">Code</a>
+          <em>Measurement</em> 192 (2022) 110897 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0263224122001798">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/XGBoost_ASFE">Code</a>
         </p>
 
         <p>
@@ -218,7 +240,7 @@
           <br>
           <strong>Yu Sha</strong>, Johannes Faber, Shuiping Gou, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou
           <br>
-          <em>Engineering Applications of Artificial Intelligence</em> | (<strong>SCI: 2-Top</strong>) | 113 (2022) 104904 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0952197622001361">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/1-D-DHRN">Code</a>
+          <em>Engineering Applications of Artificial Intelligence</em> 113 (2022) 104904 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0952197622001361">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/1-D-DHRN">Code</a>
         </p>
 
         <p>
@@ -234,7 +256,7 @@
           <br>
           Wei Li, Megha Chakraborty, <strong>Yu Sha</strong>, Kai Zhou, Johannes Faber, Georg Rümpker, Horst Stöcker, Nishtha Srivastava
           <br>
-          <em>Artificial Intelligence in Geosciences </em> | (<strong>SCI: 2</strong>) | 3 (2022) 115-122 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S2666544122000284">Paper</a> | <a style="color: #447ec9" href="https://github.com/srivastavaresearchgroup/Seismic-phase-Classification">Code</a>
+          <em>Artificial Intelligence in Geosciences</em> 3 (2022) 115-122 | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S2666544122000284">Paper</a> | <a style="color: #447ec9" href="https://github.com/srivastavaresearchgroup/Seismic-phase-Classification">Code</a>
         </p>
 
         <p>
@@ -265,20 +287,12 @@
 
     <h4> Conference Papers:</h4>
     <ol>
-        <p>
-        <li><strong>Hierarchical Knowledge Guided Fault Intensity Diagnosis of Complex Industrial Systems</strong>
-        <br>
-        <strong>Yu Sha</strong>, Shuiping Gou, Johannes Faber, Bo Liu, Ningtao Liu, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou
-        <br>
-        <em>SIGKDD2024</em> | (<strong>CCF: A</strong>) | <a style="color: #447ec9" href="https://0.0.0.0">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/HKG">Code</a>
-      </p>
-      
       <p>
         <li><strong>Regional-Local Adversarially Learned One-Class Classifier Anomalous Sound Detection in Global Long-Term Space</strong>
         <br>
         <strong>Yu Sha</strong>, Shuiping Gou, Johannes Faber, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou
         <br>
-        <em>SIGKDD2022</em> | (<strong>CCF: A</strong>) | <a style="color: #447ec9" href="https://dl.acm.org/doi/abs/10.1145/3534678.3539133">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/GRLNet">Code</a>
+        <em>SIGKDD</em> 2022 | <a style="color: #447ec9" href="https://dl.acm.org/doi/abs/10.1145/3534678.3539133">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/GRLNet">Code</a>
       </p>
 
       <p>
@@ -286,32 +300,18 @@
         <br>
         Mingjun Xiang, Lingxiao Wang, <strong>Yu Sha</strong>, Hui Yuan, Kai Zhou, Hartmut G Roskos
         <br>
-        <em>Digital Holography and Three-Dimensional Imaging 2022 | </em>(<strong>EI</strong>) | <a style="color: #447ec9" href="https://opg.optica.org/abstract.cfm?uri=DH-2022-Tu4A.4">paper</a> 
+        <em>Digital Holography and Three-Dimensional Imaging</em> 2022 | <a style="color: #447ec9" href="https://opg.optica.org/abstract.cfm?uri=DH-2022-Tu4A.4">paper</a> 
       </p>
     </ol>
 
     <h4> Patents:</h4>
     <ol>
       <p>
-        <li><strong>Heart Rate Estimation of Cardiac Shock Map Signals Based on Cross-Modal Mapping (基于跨模态映射的心冲击图信号估计方法)</strong>
+        <li><strong>Heart rate estimation method based on cross-modal mapping of heart impact map signals</strong>
         <br>
-        Shuiping Gou, Yuanjie Liu, Ningtao Liu, <strong>Yu Sha</strong>, Changzhe Jiao, Dong Hai, Shasha Mao, Jiaxin Chheng
+        Shuiping Gou, Yuanjie Liu, Ningtao Liu, <strong>Yu Sha</strong>, Changzhe Jiao, Dong Hai, Shasha Mao, Jiaxin Cheng
         <br>
-        <em>Invention Patent</em> | <em>License (CN111887858B)</em> | <a style="color: #447ec9" href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2021&filename=CN111887858B&uniplatform=NZKPT">Patent</a>
-      </p>
-      <p>
-        <li><strong>Hierarchical Cavitation Intensity Identification of Acoustic Signal Hierarchies Based on Hierarchical Transition Network (基于层级过渡网络的声学信号层级空化强度识别方法)</strong>
-        <br>
-        Shuiping Gou, <strong>Yu Sha</strong>, Zhang Guo, Bo Liu
-        <br>
-        <em>Invention Patent</em> | <em>Acceptance (2023109458851)</em> 
-      </p>
-      <p>
-        <li><strong>Face Aging Estimation Bease on Adversarial Learning with Local and Global Region Policies (基于局部和全局区域策略对抗学习的人脸老化方法)</strong>
-        <br>
-        Shuiping Gou, Ruichen Xue, Nuo Tong, Ruimin Liu, <strong>Yu Sha</strong>, Ningtao Liu
-        <br>
-        <em>Invention Patent</em> | <em>Acceptance (2023109415413)</em> 
+        <em>Invention Patent</em> CN111887858B | <a style="color: #447ec9" href="https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2021&filename=CN111887858B&uniplatform=NZKPT">Patent</a>
       </p>
     </ol>
 </div>
@@ -391,7 +391,7 @@
     <p><li> <em>2020</em>, ZhiPu AI: COVID-19 Prediction, <strong>Top 7</strong>
     <p><li> <em>2020</em>, iFLYTEK Algorithm Competition: Temperature Prediction Challenge, Team Name: <strong>San Ren Xing</strong>, <strong>Top 5</strong>, </p>
 
-    <h4> Lanzhou University of Technology (LUT):</h4>
+    <h4> Lanzhou University of Technology Technology (LUT):</h4>
     <p><li> <em>2019</em>, Outstanding Graduates Awards, LUT</p>
     <p><li> <em>2018</em>, Meritorious Winner of Mathematical Contest in Modeling (MCM/ICM)</p>
     <p><li> <em>2018</em>, First Prize in the 8th MathorCup College Student Mathematical Modeling Challenge</p>
