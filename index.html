@@ -59,33 +59,6 @@
       <span id="likeButton" class="like-button"><i class="fas fa-thumbs-up"></i></span>
       <span id="likeCount" class="like-count">0</span>
     </p>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const likeButton = document.getElementById("likeButton");
-            const likeCountSpan = document.getElementById("likeCount");
-
-            if (likeButton) {
-                likeButton.addEventListener("click", async () => {
-                    try {
-                        const response = await fetch('http://127.0.0.1:8000/like', {
-                            method: 'POST'
-                        });
-                        const result = await response.json();
-                        if (result.success) {
-                            // Update like count
-                            const countResponse = await fetch('http://127.0.0.1:8000/like-count');
-                            const countResult = await countResponse.json();
-                            likeCountSpan.textContent = countResult.count;
-                        }
-                    } catch (error) {
-                        console.error('Error:', error);
-                    }
-                });
-            } else {
-                console.error('likeButton element not found');
-            }
-        });
-    </script>
   </div>
 <!-- Sidebar/menu -->
 <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
