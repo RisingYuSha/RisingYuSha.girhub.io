@@ -65,7 +65,7 @@
         const likeCountSpan = document.getElementById('likeCount');
     
         // 获取当前的点赞数
-        fetch('http://localhost:8000/like-count')
+        fetch('http://127.0.0.1:8000/like-count')
           .then(response => response.json())
           .then(data => {
             likeCountSpan.textContent = data.likeCount;
@@ -73,7 +73,7 @@
     
         // 点赞按钮点击事件
         likeButton.addEventListener('click', () => {
-          fetch('http://localhost:8000/like', {
+          fetch('http://127.0.0.1:8000/like', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json'
