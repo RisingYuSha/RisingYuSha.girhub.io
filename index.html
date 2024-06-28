@@ -46,14 +46,6 @@
   });
   </script>
   //-->
-  <!-- Google tag (gtag.js) --> 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4TKRX34MNS"></script> 
-  <script> 
-    window.dataLayer = window.dataLayer || []; 
-    function gtag(){dataLayer.push(arguments);} 
-    gtag('js', new Date()); 
-    gtag('config', 'G-4TKRX34MNS'); 
-    </script>
 </head>
 
 
@@ -67,30 +59,34 @@
       <span id="likeButton" class="like-button"><i class="fas fa-thumbs-up"></i></span>
       <span id="likeCount" class="like-count">0</span>
     </p>
-  </div>
-  <!-- JavaScript for like button -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const likeButton = document.getElementById('likeButton');
-      const likeCountSpan = document.getElementById('likeCount');
-      
-      // 点击计数器（仅为演示用，刷新后计数将重置）
-      let likeCount = 0;
-
-      // 点赞按钮点击事件
-      likeButton.addEventListener('click', () => {
-        likeCount++;
-        likeCountSpan.textContent = likeCount;
-
-        // 触发 Google Analytics 事件
-        gtag('event', 'like_button_click', {
-          'event_category': 'engagement',
-          'event_label': 'Like Button',
-          'value': 1
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const likeButton = document.getElementById('likeButton');
+        const likeCountSpan = document.getElementById('likeCount');
+    
+        // 获取当前的点赞数
+        fetch('http://localhost:8000/like-count')
+          .then(response => response.json())
+          .then(data => {
+            likeCountSpan.textContent = data.likeCount;
+          });
+    
+        // 点赞按钮点击事件
+        likeButton.addEventListener('click', () => {
+          fetch('http://localhost:8000/like', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          })
+          .then(response => response.json())
+          .then(data => {
+            likeCountSpan.textContent = data.likeCount;
+          });
         });
       });
-    });
-  </script>
+    </script>
+  </div>
 <!-- Sidebar/menu -->
 <div class="w3-padding-64 w3-text-light-grey w3-large" style="font-weight:bold">
   <a href="#home" class="w3-bar-item w3-button">🏡 Home</a>
