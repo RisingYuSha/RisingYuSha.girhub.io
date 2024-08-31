@@ -243,3 +243,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .like-count {
     font-size: 1.3em; /* 增大计数字体尺寸，1.5em是示例值，可以根据需要调整 */
 }
+#news-list-container {
+    max-height: 160px; /* 固定容器高度，可以根据需要调整 */
+    width: 1100px; /* 固定容器宽度，可以根据需要调整 */
+    overflow-y: auto;  /* 启用垂直滚动条 */
+    border: 1px solid #ccc; /* 添加边框以区分滚动区域 */
+    padding: 10px; /* 内边距 */
+}
+
+#news-list {
+    list-style-type: none; /* 移除列表的默认样式 */
+    padding: 0; /* 移除内边距 */
+    margin: 0; /* 移除外边距 */
+}
+
+#news-list li {
+    margin-bottom: 10px; /* 列表项之间的间距 */
