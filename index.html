@@ -116,6 +116,8 @@
 <!-- The News Section -->
 <div class="w3-container w3-padding-32" id="news">
   <h2>📰 News</h2>
+  <div id="news-list-container">
+    <ul id="news-list">
   <p>
     <p><li> <em>19/08/2024</em>, 🎉🎉 one paper has been accepted by <a style="color: #447ec9" href="https://www.sciencedirect.com/journal/expert-systems-with-applications">Expert Systems with Applications (ESWA)</a>.</li></p>
     <p><li> <em>17/05/2024</em>, 🎉🎉 one paper has been accepted by <a style="color: #447ec9" href="https://kdd2024.kdd.org/">ACM SIGKDD 2024 (CCF-A)</a>.</li></p>
@@ -131,6 +133,9 @@
     <p><li> <em>30/09/2020</em>, 📢📢 I went to <a style="color: #447ec9" href="https://fias.institute/en/">Frankfurt Institute for Advanced Studies (FIAS)</a> as a PhD visiting student.</li></p>
     <p><li> <em>10/09/2019</em>, 📢📢 I was admitted to <a style="color: #447ec9" href="https://www.xidian.edu.cn/">Xidian University (XDU)</a> as a Fast-Track PhD student.</li></p>
 </div>
+</div>
+
+
 
 <!-- The Researches Section -->
 <!-- class="w3-container w3-light-grey w3-padding-32" -->
@@ -162,7 +167,7 @@
       </ul>
     </li>
 
-    <li><h5>Deep Laerning</h5>
+    <li><h5>Deep Learning</h5>
       <ul>
         <li>Generative models, eg: GAN [<a style="color: #447ec9" href="https://arxiv.org/abs/1406.2661">12</a>], Flow Models [<a style="color: #447ec9" href="https://arxiv.org/abs/1807.03039">13</a>] and Diffusion Models [<a style="color: #447ec9" href="https://arxiv.org/abs/2105.05233">14</a>, <a style="color: #447ec9" href="https://arxiv.org/abs/1503.03585">15</a>, <a style="color: #447ec9" href="https://arxiv.org/abs/2006.11239">16</a>], etc [<a style="color: #447ec9" href="https://arxiv.org/abs/2302.04265">17</a>, <a style="color: #447ec9" href="https://arxiv.org/abs/2209.11178">18</a>];</li>
         <li>Attention mechanisms, eg: Channel Attention [<a style="color: #447ec9" href="https://arxiv.org/abs/1709.01507">19</a>], Spatial Attention [<a style="color: #447ec9" href="https://arxiv.org/abs/1807.06521">20</a>] and Physical Attention [<a style="color: #447ec9" href="https://arxiv.org/abs/2012.11879">21</a>].</li>
@@ -194,70 +199,316 @@
     </p> -->
       <h4> Papers:</h4>
       <ol>
-        <p>
-        <li><strong>Hierarchical Knowledge Guided Fault Intensity Diagnosis of Complex Industrial Systems</strong>
-        <br>
-        <strong>Yu Sha</strong>, Shuiping Gou, Bo Liu, Ningtao Liu, Johannes Faber, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou
-        <br>
-        <em>SIGKDD (oral)</em> | 2024 | <strong>CCF：A</strong> | <a style="color: #447ec9" href="https://doi.org/10.1145/3637528.3671610">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/HKG">Code</a>
-       </p>
+        <!-- 11 -->
+        <div class="container">
+          <div style="display: flex; align-items: flex-start; position: relative;">
+            <!-- 图像部分 -->
+            <div style="flex: 1; position: relative;">
+              <div class='paper-box-image'>
+                <div style="position: relative;">
+                  <!-- Badge 设置为绝对定位，并添加蓝色背景 -->
+                  <div class="badge" style="position: absolute; top: 1px; left: 1px; background-color: rgb(218, 60, 152); color: white; padding: 5px 10px; border-radius: 5px;">
+                    KDD 2024 (oral)
+                  </div>
+                  <!-- 设置图片的宽度和高度 -->
+                  <img src='figs/KDD2024.png' alt="sym" width="400" height="180" style="box-shadow: 3px 3px 6px #888;">
+                </div>
+              </div>
+            </div>
         
-        <p>
-          <li><strong>Hierarchical Cavitation Intensity Recognition Using Sub-Master Transition Network-based Acoustic Signals in Pipeline Systems</strong>
-          <br>
-          Shuiping Gou, <strong>Yu Sha*</strong>, Bo Liu, Ningtao Liu, Johannes Faber, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou (If you know, you know)
-          <br>
-          <em>Expert Systems with Applications</em> | 2024 | <strong>SCI：1-Top</strong> | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0957417424020220?via%3Dihub">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/SMTNet">Code</a>
-        </p>
-        
-        <p>
-        <li><strong>Regional-Local Adversarially Learned One-Class Classifier Anomalous Sound Detection in Global Long-Term Space</strong>
-        <br>
-        <strong>Yu Sha</strong>, Shuiping Gou, Johannes Faber, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou
-        <br>
-        <em>SIGKDD</em> | 2022 | <strong>CCF：A</strong> | <a style="color: #447ec9" href="https://dl.acm.org/doi/abs/10.1145/3534678.3539133">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/GRLNet">Code</a>
-      </p>
+            <!-- 文本部分 -->
+            <div style="flex: 2; padding-left: 20px;">
+              <li>
+                <strong>Hierarchical Knowledge Guided Fault Intensity Diagnosis of Complex Industrial Systems</strong>
+                <br>
+                <strong>Yu Sha</strong>, Shuiping Gou, Bo Liu, Ningtao Liu, Johannes Faber, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou  
+                <br>
+                <em><strong>SIGKDD 2024</strong></em> | <strong>CCF: A</strong> |
+                <a style="color: #447ec9" href="https://doi.org/10.1145/3637528.3671610">Paper</a> | 
+                <a style="color: #447ec9" href="https://github.com/CavitationDetection/HKG">Code</a>
+              </li>
               
-        <p>
-          <li><strong>A multi-task learning for cavitation detection and cavitation intensity recognition of valve acoustic signals</strong>
-          <br>
-          <strong>Yu Sha</strong>, Johannes Faber, Shuiping Gou, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou
-          <br>
-          <em>Engineering Applications of Artificial Intelligence</em> | 2022 | <strong>SCI：2-Top</strong> | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0952197622001361">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/1-D-DHRN">Code</a>
-        </p>  
-        
-        <p>
-          <li><strong>An acoustic signal cavitation detection framework based on XGBoost with adaptive selection feature engineering</strong>
-          <br>
-          <strong>Yu Sha</strong>, Johannes Faber, Shuiping Gou, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou  
-          <br>
-          <em>Measurement</em> | 2022 | <strong>SCI：2-Top</strong> | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0263224122001798">Paper</a> | <a style="color: #447ec9" href="https://github.com/CavitationDetection/XGBoost_ASFE">Code</a>
-        </p>
-        
-        <p>
-          <li><strong>Prioritization Hindsight Experience based on Spatial Position Attention for Robots</strong>
-          <br>
-          Ye Yuan, <strong>Yu Sha</strong>, Feixiang Sun, Haofan Lu, Shuiping Gou, Jie Luo (If you know, you know)
-          <br>
-          <em>Machine Intelligence Research</em> | 2023 | <strong>SCI：4</strong> | <a style="color: #447ec9" href="https://link.springer.com/journal/11633">Paper</a> 
-        </p>
-        
-        <p>
-        <li><strong>Phase Retrieval for Terahertz Holography with Physics-Informed Deep Learning</strong>
-        <br>
-        Mingjun Xiang, Lingxiao Wang, <strong>Yu Sha</strong>, Hui Yuan, Kai Zhou, Hartmut G Roskos
-        <br>
-        <em>Digital Holography and Three-Dimensional Imaging</em> | 2022 | <strong>EI</strong> | <a style="color: #447ec9" href="https://opg.optica.org/abstract.cfm?uri=DH-2022-Tu4A.4">paper</a> 
-      </p>
-        
-        <p>
-          <li><strong>A study on small magnitude seismic phase identification using 1D deep residual neural network</strong>
-          <br>
-          Wei Li, Megha Chakraborty, <strong>Yu Sha</strong>, Kai Zhou, Johannes Faber, Georg Rümpker, Horst Stöcker, Nishtha Srivastava
-          <br>
-          <em>Artificial Intelligence in Geosciences</em> | 2022 | <strong>SCI：2</strong> | <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S2666544122000284">Paper</a> | <a style="color: #447ec9" href="https://github.com/srivastavaresearchgroup/Seismic-phase-Classification">Code</a>
-        </p>
+              <!-- 使用无序列表和实心序号 -->
+              <ul style="list-style-type: disc; margin: 10px 0 0 20px; padding-left: 0;">
+                <li style="margin-left: 10px;">The paper explores hierarchical Knowledge of labels with GCN.</li>
+                <li style="margin-left: 10px;">The paper presents the Hierarchical Knowledge Correlation Matrix.</li>
+                <li style="margin-left: 10px;">The sound cavitation datasets provided by SAMSON AG.</li>
+              </ul>
+            </div>
+          </div>
 
+        <!-- 10 -->
+          <!-- 隐形白线 -->
+          <div style="height: 20px; background-color: white;"></div>
+          <div style="display: flex; align-items: flex-start; position: relative; margin-top: 20px;">
+            <!-- 图像部分 -->
+            <div style="flex: 1; position: relative;">
+              <div class='paper-box-image'>
+                <div style="position: relative;">
+                  <!-- Badge 设置为绝对定位，并添加蓝色背景 -->
+                  <div class="badge" style="position: absolute; top: 1px; left: 1px; background-color: rgb(218, 60, 152); color: white; padding: 5px 10px; border-radius: 5px;">
+                    ESWA 2024
+                  </div>
+                  <!-- 设置图片的宽度和高度 -->
+                  <img src='figs/ESWA2024.png' alt="sym" width="400" height="180" style="box-shadow: 3px 3px 6px #888;">
+                </div>
+              </div>
+            </div>
+        
+            <!-- 文本部分 -->
+            <div style="flex: 2; padding-left: 20px;">
+              <li>
+                <strong>Hierarchical Cavitation Intensity Recognition Using Sub-Master Transition Network-based Acoustic Signals in Pipeline Systems</strong>
+                <br>
+                Shuiping Gou, <strong>Yu Sha*</strong>, Bo Liu, Ningtao Liu, Johannes Faber, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou (If you know, you know)  
+                <br>
+                <em><strong>Expert Systems with Applications</strong></em> | 2022 |<strong>SCI: 1-Top</strong> |
+                <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0957417424020220?via%3Dihub">Paper</a>
+              </li>
+              
+              <!-- 使用无序列表和实心序号 -->
+              <ul style="list-style-type: disc; margin: 10px 0 0 20px; padding-left: 0;">
+                <li style="margin-left: 10px;">The paper presents a two-stage hierarchical classification network</li>
+                <li style="margin-left: 10px;">The paper proposes a hierarchical label tree.</li>
+                <li style="margin-left: 10px;">The sound cavitation datasets provided by SAMSON AG.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="container">
+          <div style="height: 20px; background-color: white;"></div>
+          <div style="display: flex; align-items: flex-start; position: relative; margin-top: 20px;">
+            <!-- 图像部分 -->
+            <div style="flex: 1; position: relative;">
+              <div class='paper-box-image'>
+                <div style="position: relative;">
+                  <!-- Badge 设置为绝对定位，并添加蓝色背景 -->
+                  <div class="badge" style="position: absolute; top: 1px; left: 1px; background-color: rgb(218, 60, 152); color: white; padding: 5px 10px; border-radius: 5px;">
+                    KDD 2022
+                  </div>
+                  <!-- 设置图片的宽度和高度 -->
+                  <img src='figs/KDD2022.png' alt="sym" width="400" height="180" style="box-shadow: 3px 3px 6px #888;">
+                </div>
+              </div>
+            </div>
+        
+            <!-- 文本部分 -->
+            <div style="flex: 2; padding-left: 20px;">
+              <li>
+                <strong>Regional-Local Adversarially Learned One-Class Classifier Anomalous Sound Detection in Global Long-Term Space</strong>
+                <br>
+                <strong>Yu Sha</strong>, Shuiping Gou, Johannes Faber, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou  
+                <br>
+                <em><strong>SIGKDD 2022</strong></em> | <strong>CCF: A</strong> |
+                <a style="color: #447ec9" href="https://dl.acm.org/doi/abs/10.1145/3534678.3539133">Paper</a> | 
+                <a style="color: #447ec9" href="https://github.com/CavitationDetection/GRLNet">Code</a>
+              </li>
+              
+              <!-- 使用无序列表和实心序号 -->
+              <ul style="list-style-type: disc; margin: 10px 0 0 20px; padding-left: 0;">
+                <li style="margin-left: 10px;">The paper proposes a global filter layer based on a 1D FFT global filter for long-term interactions.</li>
+                <li style="margin-left: 10px;">The paper extends the capability of discriminating real against fake signals to differentiating between local and regional reconstructions.</li>
+                <li style="margin-left: 10px;">The paper designs a novel balanceable detection strategy.</li>
+              </ul>
+            </div>
+          </div>
+
+        <!-- 8 -->
+        <div class="container">
+          <div style="height: 20px; background-color: white;"></div>
+          <div style="display: flex; align-items: flex-start; position: relative; margin-top: 20px;">
+            <!-- 图像部分 -->
+            <div style="flex: 1; position: relative;">
+              <div class='paper-box-image'>
+                <div style="position: relative;">
+                  <!-- Badge 设置为绝对定位，并添加蓝色背景 -->
+                  <div class="badge" style="position: absolute; top: 1px; left: 1px; background-color: rgb(218, 60, 152); color: white; padding: 5px 10px; border-radius: 5px;">
+                    EAAI 2022
+                  </div>
+                  <!-- 设置图片的宽度和高度 -->
+                  <img src='figs/EAAI2022.png' alt="sym" width="400" height="150" style="box-shadow: 3px 3px 6px #888;">
+                </div>
+              </div>
+            </div>
+        
+            <!-- 文本部分 -->
+            <div style="flex: 2; padding-left: 20px;">
+              <li>
+                <strong>A multi-task learning for cavitation detection and cavitation intensity recognition of valve acoustic signals</strong>
+                <br>
+                <strong>Yu Sha</strong>, Johannes Faber, Shuiping Gou, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou 
+                <br>
+                <em><strong>Engineering Applications of Artificial Intelligence</strong></em> | 2022 | <strong>SCI: 2-Top</strong> |
+                <a style="color: #447ec9" href="https://dl.acm.org/doi/abs/10.1145/3534678.3539133">Paper</a> | 
+                <a style="color: #447ec9" href="https://github.com/CavitationDetection/GRLNet">Code</a>
+              </li>
+              
+              <!-- 使用无序列表和实心序号 -->
+              <ul style="list-style-type: disc; margin: 10px 0 0 20px; padding-left: 0;">
+                <li style="margin-left: 10px;">The paper regards cavitation detection and cavitation intensity recognition as a multi-task learning.</li>
+                <li style="margin-left: 10px;">The 1-D Double Hierarchical Residual Blocks with large kernel are proposed as an automatic feature extractor.</li>
+                <li style="margin-left: 10px;">The sound cavitation datasets provided by SAMSON AG.</li>
+              </ul>
+            </div>
+          </div>
+
+        <!-- 7 -->
+        <div class="container">
+          <div style="height: 20px; background-color: white;"></div>
+          <div style="display: flex; align-items: flex-start; position: relative; margin-top: 20px;">
+            <!-- 图像部分 -->
+            <div style="flex: 1; position: relative;">
+              <div class='paper-box-image'>
+                <div style="position: relative;">
+                  <!-- Badge 设置为绝对定位，并添加蓝色背景 -->
+                  <div class="badge" style="position: absolute; top: 1px; left: 1px; background-color: rgb(218, 60, 152); color: white; padding: 5px 10px; border-radius: 5px;">
+                    Measurement 2022
+                  </div>
+                  <!-- 设置图片的宽度和高度 -->
+                  <img src='figs/Measurement2022.png' alt="sym" width="400" height="220" style="box-shadow: 3px 3px 6px #888;">
+                </div>
+              </div>
+            </div>
+        
+            <!-- 文本部分 -->
+            <div style="flex: 2; padding-left: 20px;">
+              <li>
+                <strong>An acoustic signal cavitation detection framework based on XGBoost with adaptive selection feature engineering</strong>
+                <br>
+                <strong>Yu Sha</strong>, Johannes Faber, Shuiping Gou, Bo Liu, Wei Li, Stefan Schramm, Horst Stoecker, Thomas Steckenreiter, Domagoj Vnucec, Nadine Wetzstein, Andreas Widl, Kai Zhou
+                <br>
+                <em><strong>Measurement</strong></em> | 2022 | <strong>SCI: 2-Top</strong> |
+                <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S0263224122001798">Paper</a> | 
+                <a style="color: #447ec9" href="https://github.com/CavitationDetection/XGBoost_ASFE">Code</a>
+              </li>
+              
+              <!-- 使用无序列表和实心序号 -->
+              <ul style="list-style-type: disc; margin: 10px 0 0 20px; padding-left: 0;">
+                <li style="margin-left: 10px;">The paper proposes a adaptive feature aggregation module.</li>
+                <li style="margin-left: 10px;">The paper presents a adaptive feature crosses module.</li>
+                <li style="margin-left: 10px;">The sound cavitation datasets provided by SAMSON AG.</li>
+              </ul>
+            </div>
+          </div>
+
+        <!-- 6 -->
+        <div class="container">
+          <div style="height: 20px; background-color: white;"></div>
+          <div style="display: flex; align-items: flex-start; position: relative; margin-top: 20px;">
+            <!-- 图像部分 -->
+            <div style="flex: 1; position: relative;">
+              <div class='paper-box-image'>
+                <div style="position: relative;">
+                  <!-- Badge 设置为绝对定位，并添加蓝色背景 -->
+                  <div class="badge" style="position: absolute; top: 1px; left: 1px; background-color: rgb(218, 60, 152); color: white; padding: 5px 10px; border-radius: 5px;">
+                    MIR 2023
+                  </div>
+                  <!-- 设置图片的宽度和高度 -->
+                  <img src='figs/MIR2023.png' alt="sym" width="400" height="150" style="box-shadow: 3px 3px 6px #888;">
+                </div>
+              </div>
+            </div>
+        
+            <!-- 文本部分 -->
+            <div style="flex: 2; padding-left: 20px;">
+              <li>
+                <strong>Prioritization Hindsight Experience based on Spatial Position Attention for Robots</strong>
+                <br>
+                Ye Yuan, <strong>Yu Sha</strong>, Feixiang Sun, Haofan Lu, Shuiping Gou, Jie Luo (If you know, you know)
+                <br>
+                <em><strong>Machine Intelligence Research</strong></em> | 2023 | <strong>SCI: 4</strong> |
+                <a style="color: #447ec9" href="https://link.springer.com/journal/11633">Paper</a> | 
+              </li>
+              
+              <!-- 使用无序列表和实心序号 -->
+              <ul style="list-style-type: disc; margin: 10px 0 0 20px; padding-left: 0;">
+                <li style="margin-left: 10px;">The paper proposes a spatial position attention module for the existing HER framework.</li>
+                <li style="margin-left: 10px;">The paper presents a theoretical analysis of the total spatial position distance of manipulated object.</li>
+                <li style="margin-left: 10px;">Eight robotic manipulation tasks in the Fetch and Hand robot environments of OpenAI Gym.</li>
+              </ul>
+            </div>
+          </div>
+
+        <!-- 5 -->
+        <div class="container">
+          <div style="height: 20px; background-color: white;"></div>
+          <div style="display: flex; align-items: flex-start; position: relative; margin-top: 20px;">
+            <!-- 图像部分 -->
+            <div style="flex: 1; position: relative;">
+              <div class='paper-box-image'>
+                <div style="position: relative;">
+                  <!-- Badge 设置为绝对定位，并添加蓝色背景 -->
+                  <div class="badge" style="position: absolute; top: 1px; left: 1px; background-color: rgb(218, 60, 152); color: white; padding: 5px 10px; border-radius: 5px;">
+                    DH3D 2022
+                  </div>
+                  <!-- 设置图片的宽度和高度 -->
+                  <img src='figs/DH3D2022.png' alt="sym" width="400" height="150" style="box-shadow: 3px 3px 6px #888;">
+                </div>
+              </div>
+            </div>
+        
+            <!-- 文本部分 -->
+            <div style="flex: 2; padding-left: 20px;">
+              <li>
+                <strong>Phase Retrieval for Terahertz Holography with Physics-Informed Deep Learning</strong>
+                <br>
+                Mingjun Xiang, Lingxiao Wang, <strong>Yu Sha</strong>, Hui Yuan, Kai Zhou, Hartmut G Roskos
+                <br>
+                <em><strong>Digital Holography and Three-Dimensional Imaging</strong></em> | 2022 | <strong>EI</strong> |
+                <a style="color: #447ec9" href="https://link.springer.com/journal/11633">Paper</a>  
+              </li>
+              
+              <!-- 使用无序列表和实心序号 -->
+              <ul style="list-style-type: disc; margin: 10px 0 0 20px; padding-left: 0;">
+                <li style="margin-left: 10px;">The paper proposes a two novel phase retrieval methods for THz holography.</li>
+                <li style="margin-left: 10px;">The paper employs unsupervised learning and supervised learning based on the MNIST dataset.</li>
+              </ul>
+            </div>
+          </div>
+        
+        <!-- 4 -->
+        <div class="container">
+          <div style="height: 20px; background-color: white;"></div>
+          <div style="display: flex; align-items: flex-start; position: relative; margin-top: 20px;">
+            <!-- 图像部分 -->
+            <div style="flex: 1; position: relative;">
+              <div class='paper-box-image'>
+                <div style="position: relative;">
+                  <!-- Badge 设置为绝对定位，并添加蓝色背景 -->
+                  <div class="badge" style="position: absolute; top: 1px; left: 1px; background-color: rgb(218, 60, 152); color: white; padding: 5px 10px; border-radius: 5px;">
+                    AIIG 2022
+                  </div>
+                  <!-- 设置图片的宽度和高度 -->
+                  <img src='figs/AIIG2022.png' alt="sym" width="400" height="180" style="box-shadow: 3px 3px 6px #888;">
+                </div>
+              </div>
+            </div>
+        
+            <!-- 文本部分 -->
+            <div style="flex: 2; padding-left: 20px;">
+              <li>
+                <strong>A study on small magnitude seismic phase identification using 1D deep residual neural network</strong>
+                <br>
+                Wei Li, Megha Chakraborty, <strong>Yu Sha</strong>, Kai Zhou, Johannes Faber, Georg Rümpker, Horst Stöcker, Nishtha Srivastava
+                <br>
+                <em><strong>Artificial Intelligence in Geosciences</strong></em> | 2022 | <strong>SCI: 2</strong> |
+                <a style="color: #447ec9" href="https://www.sciencedirect.com/science/article/pii/S2666544122000284">Paper</a> | 
+                <a style="color: #447ec9" href="https://github.com/srivastavaresearchgroup/Seismic-phase-Classification">Code</a>
+              </li>
+              
+              <!-- 使用无序列表和实心序号 -->
+              <ul style="list-style-type: disc; margin: 10px 0 0 20px; padding-left: 0;">
+                <li style="margin-left: 10px;">1D deep Residual Neural Network for tackling the problem of seismic signal detection and phase identification.</li>
+                <li style="margin-left: 10px;">The method is trained and tested on the dataset recorded by the Southern California Seismic Network.</li>
+                <li style="margin-left: 10px;">The model generalizability is also tested further on the STanford EArthquake Dataset.</li>
+              </ul>
+            </div>
+          </div>
+        
+
+        <!-- 3 -->
         <p>
           <li><strong>Deep Learning-based Small Magnitude Earthquake Detection and Seismic Phase Classification</strong>
           <br>
@@ -266,6 +517,7 @@
           <em>arXiv</em> 2204.02870 | <a style="color: #447ec9" href="https://arxiv.org/pdf/2204.02870.pdf">Paper</a> | <a style="color: #447ec9" href="https://github.com/srivastavaresearchgroup/Seismic-phase-Classification">Code</a>
         </p>
 
+        <!-- 2 -->
         <p>
           <li><strong>Smart home system based on STC89C52</strong>
           <br>
@@ -274,6 +526,7 @@
           <em>Practical Electronics</em> | 2018 | <a style="color: #447ec9" href="http://www.cqvip.com/qk/97913x/201803/674492691.html">Paper</a>
         </p>
 
+        <!-- 1 -->
         <p>
           <li><strong>Study on operation analysis and decision making for sharing-bicycles</strong>
           <br>
